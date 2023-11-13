@@ -1,0 +1,19 @@
+import random
+
+def draw_random_angle_quadrilateral(turtle, min_x, max_x, min_y, max_y):
+    turtle.color(random.random(), random.random(), random.random())  # Set a random color
+    turtle.begin_fill()  # Begin filling the shape with the chosen color
+    
+    side_lengths = [random.randint(50, 100) for _ in range(4)]  # Random side lengths between 50 and 100
+    rotation_angles = [random.randint(0, 360) for _ in range(4)]  # Random rotation angles between 0 and 360
+
+    for i in range(4):
+        turtle.forward(side_lengths[i])
+        turtle.left(rotation_angles[i])
+
+    turtle.end_fill()  # End filling the shape
+
+    # Move turtle to a random position within the specified coordinates
+    turtle.penup()
+    turtle.goto(random.uniform(min_x, max_x), random.uniform(min_y, max_y))
+    turtle.pendown()
