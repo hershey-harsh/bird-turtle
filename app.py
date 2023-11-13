@@ -9,7 +9,7 @@ screen.bgcolor(bgcolor)
 turtle.speed(int(speed))
 
 while turtle.xcor() < max_x and turtle.ycor() < max_y:
-    draw_random_angle_quadrilateral(min_x, max_x, min_y, max_y)
+    draw_random_angle_quadrilateral(turtle, min_x, max_x, min_y, max_y)
 
 turtle.hideturtle()
 turtle.done()
