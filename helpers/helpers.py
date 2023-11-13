@@ -1,8 +1,8 @@
 import random
-import colors
+from colors import colors
 
 def draw_random_angle_quadrilateral(turtle, min_x, max_x, min_y, max_y):
-    turtle.color(random.choice(color_list))
+    turtle.color(random.choice(colors))
     turtle.begin_fill()
     
     side_lengths = [random.randint(50, 100) for _ in range(4)]
