@@ -1,5 +1,5 @@
 import random
-from colors import colors
+from helpers.colors import colors
 
 def draw_random_angle_quadrilateral(turtle, min_x, max_x, min_y, max_y):
     turtle.color(random.choice(colors))
